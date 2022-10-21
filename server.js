@@ -18,6 +18,10 @@ app.get('/home',(req,res)=>{
     res.send("<h1>Welcom Home</h1>")
 })
 
+app.get('/server', (req,res) => {
+  res.send('<p>Muqeet</p>')
+})
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
 })
